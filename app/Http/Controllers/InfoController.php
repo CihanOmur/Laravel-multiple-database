@@ -43,14 +43,16 @@ class InfoController extends Controller
             $sec->name =$request->name;
             $sec->surname =$request->surname;
             $sec->save();
+            return redirect()->back();
         }
         if ($request->how =="2") {
             $sec2 = new Info2;
             $sec2->name =$request->name;
             $sec2->surname =$request->surname;
             $sec2->save();
+            return redirect()->back();
         }
-        return redirect()->back();
+        
     }
 
     /**

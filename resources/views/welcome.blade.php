@@ -22,7 +22,7 @@
             <tr>
                 <td>{{$item->name}}</td>
                 <td>{{$item->surname}}</td>
-                <td><form action="{{route('info.destroy',$item->id)}}" method="post">@csrf @method('DELETE') <input name="select    " type="hidden" value="1"> <button type="submit">Delete</button></form></td>
+                <td><form action="{{route('info.destroy',$item->id)}}" method="post">@csrf @method('DELETE') <input name="select" type="hidden" value="1"> <button type="submit">Delete</button></form></td>
             </tr>
             @endforeach
             <!-- and so on... -->
